@@ -1,0 +1,17 @@
+[package]
+name = "dropout"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk = "0.9"  # 用于自绘制UI的GTK库
+serde = { version = "1.0", features = ["derive"] }  # 用于序列化和反序列化
+toml = "0.5"  # 用于配置文件解析
+log = "0.4"  # 用于日志记录
+env_logger = "0.9"  # 用于环境日志记录
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
