@@ -9,6 +9,7 @@ serde = { version = "1.0", features = ["derive"] }  # 用于序列化和反序�
 toml = "0.5"  # 用于配置文件解析
 log = "0.4"  # 用于日志记录
 env_logger = "0.9"  # 用于环境日志记录
+glib-sys = "0.20.7"
 
 [profile.dev]
 opt-level = 0
